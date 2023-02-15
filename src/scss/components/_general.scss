@@ -54,3 +54,17 @@
 .sa-icon {
   fill: $color-grey;
 }
+
+.is-desktop {
+  width: 100%;
+  height: 100vh;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    color: #000;
+    text-align: center;
+  }
+}

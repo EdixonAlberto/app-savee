@@ -13,17 +13,28 @@ import { Cart } from '~/views/Cart'
 import { Payment } from '~/views/Payment'
 import { Profile } from '~/views/Profile'
 
+const isDesktop = window.screen.width > 768
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<LayoutMain children={<Home />} />} />
-        <Route path="/plan" element={<LayoutMain children={<Plan />} />} />
-        <Route path="/shopping" element={<LayoutMain children={<Cart />} />} />
-        <Route path="/payment" element={<Payment />} />
-        <Route path="/profile" element={<LayoutMain children={<Profile />} />} />
-      </Routes>
-    </BrowserRouter>
+    {isDesktop ? (
+      <div className="is-desktop">
+        <span>
+          Por el momento esta aplicación web solo está disponible para su visualización en pantallas menores a 768px de
+          ancho.
+        </span>
+      </div>
+    ) : (
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<LayoutMain children={<Home />} />} />
+          <Route path="/plan" element={<LayoutMain children={<Plan />} />} />
+          <Route path="/shopping" element={<LayoutMain children={<Cart />} />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/profile" element={<LayoutMain children={<Profile />} />} />
+        </Routes>
+      </BrowserRouter>
+    )}
   </React.StrictMode>
 )
