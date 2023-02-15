@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "syler.sass-indented",
+    "esbenp.prettier-vscode",
+    "naumovs.color-highlight",
+    "irongeek.vscode-env"
+  ]
+}
