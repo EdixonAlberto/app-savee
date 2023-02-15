@@ -1,23 +1,28 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import '~/scss/main.scss'
 
 // VIEWS
-import { Home } from '~/views/Home'
 import { Login } from '~/views/Auth/Login'
+import { LayoutMain } from '~/Layouts/LayoutMain'
+import { Home } from '~/views/Home'
+import { Plan } from '~/views/Plan'
 import { Cart } from '~/views/Cart'
 import { Payment } from '~/views/Payment'
+import { Profile } from '~/views/Profile'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/shopping" element={<Cart />} />
+        <Route path="/" element={<LayoutMain children={<Home />} />} />
+        <Route path="/plan" element={<LayoutMain children={<Plan />} />} />
+        <Route path="/shopping" element={<LayoutMain children={<Cart />} />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/profile" element={<LayoutMain children={<Profile />} />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

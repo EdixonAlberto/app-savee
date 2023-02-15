@@ -1,6 +1,6 @@
 import './Login.scss'
-import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export function Login() {
   const [email, setEmail] = useState<string>('')
