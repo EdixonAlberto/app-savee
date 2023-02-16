@@ -1,5 +1,6 @@
 {
   "name": "app-savee",
+  "description": "Aplicación web movil para la generación de lista de compras de alimentos",
   "private": true,
   "license": "UNLICENSED",
   "version": "0.0.1",
