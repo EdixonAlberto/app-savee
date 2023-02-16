@@ -1,9 +1,73 @@
 .Payment {
   width: 100%;
-  height: calc(100vh - $height-tabs);
+  padding: 0 40px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  row-gap: 30px;
   background: $color-secondary;
+
+  h2 {
+    text-align: center;
+  }
+
+  .card-info {
+    padding: 0 10px;
+    position: relative;
+    border: 1px solid $color-grey;
+    border-radius: 20px;
+
+    .sa-btn {
+      width: max-content;
+      height: 32px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      line-height: 15px;
+      border-radius: 10px;
+    }
+  }
+
+  .card-payment {
+    user-select: none;
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+
+    & > div {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        margin: 0;
+
+        &:nth-child(1) {
+          color: $color-grey;
+        }
+      }
+    }
+
+    .total {
+      margin-bottom: 25px;
+
+      p:nth-child(2) {
+        font-size: 26px;
+        font-weight: 600;
+      }
+    }
+
+    .button-paypal {
+      margin: 0 auto;
+      text-align: center;
+      input {
+        object-fit: scale-down;
+      }
+    }
+  }
 }

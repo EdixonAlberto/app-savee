@@ -9,6 +9,7 @@ export function Cart() {
   const navigate = useNavigate()
 
   function finishShopping() {
+    localStorage.setItem('payment', 'false')
     navigate('/payment')
   }
 
