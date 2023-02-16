@@ -24,7 +24,7 @@ export function Payment() {
 
   return (
     <div className="Payment">
-      <h2>Payment</h2>
+      <h2>Verificar Pago</h2>
 
       <div className="card-info">
         <button className="sa-btn">Editar</button>
@@ -87,7 +87,12 @@ export function Payment() {
             alt="PayPal, la forma rápida y segura de pagar en Internet."
             onClick={finishPayment}
           />
-          <img alt="" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1" />
+          <img
+            alt="button pay of paypal"
+            src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif"
+            width="1"
+            height="1"
+          />
         </form>
       </div>
     </div>
