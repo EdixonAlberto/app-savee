@@ -1,7 +1,7 @@
 .Layout-Main {
   & > div:not(.Home) {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - $height-tabs);
     display: flex;
     align-items: center;
     justify-content: center;

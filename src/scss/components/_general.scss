@@ -41,6 +41,17 @@
     animation: 1s linear 0s infinite none running spin;
   }
 
+  &.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+
+    .sa-icon {
+      fill: #fff;
+    }
+  }
+
   @keyframes spin {
     from {
       transform: rotate(0);

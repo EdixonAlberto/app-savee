@@ -1,6 +1,9 @@
 import './Home.scss'
+import { useNavigate } from 'react-router-dom'
 
 export function Home() {
+  const navigate = useNavigate()
+
   return (
     <div className="Home">
       <div className="home-header">
@@ -23,7 +26,7 @@ export function Home() {
         <div className="card">
           <p className="title">Plan de Comidas</p>
           <p className="content">Crea tus propios menús para el período que tú elijas.</p>
-          <button className="sa-btn">
+          <button className="sa-btn" onClick={() => navigate('/plan')}>
             <span>Crear plan</span>
           </button>
           <div className="banner-right">illustration</div>
