@@ -19,10 +19,12 @@ export function Plan() {
     }
   }
 
-  function RenderList({ list }: { list: string[] }) {
+  function RenderList({ list, isFood = false }: { list: (string | object)[]; isFood?: boolean }) {
+    const nameList = isFood ? list.map((l: any) => l.name) : list
+
     return (
       <ul>
-        {list.map((aller, index) => {
+        {nameList.map((name, index) => {
           const refs = useRef(null)
 
           return (
@@ -33,7 +35,7 @@ export function Plan() {
                 ;(refs.current! as any).checked = !isCheck
               }}
             >
-              <span>{aller}</span>
+              <span>{name}</span>
               <div className="sa-check">
                 <input ref={refs} type="checkbox" defaultChecked={false} />
               </div>
@@ -57,7 +59,7 @@ export function Plan() {
               <input type="text" placeholder="Buscar Alimentos" />
             </div>
 
-            <RenderList list={foodList} />
+            <RenderList list={foodList} isFood />
           </div>
         )}
 

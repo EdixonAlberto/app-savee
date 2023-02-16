@@ -1,10 +1,50 @@
 [
-  "Pimiento verde",
-  "Pimiento rojo",
-  "Cordero",
-  "Arroz redondo",
-  "Tomates en rama",
-  "tortillas de maíz",
-  "Rodajas de salmón",
-  "Lechuga hoja de roble"
+  {
+    "name": "Pimiento verde",
+    "qty": 100,
+    "price": 0.10,
+    "image": "https://catu.ec/wp-content/uploads/2021/04/PIMIENTO-VERDE.jpg"
+  },
+  {
+    "name": "Pimiento rojo",
+    "qty": 120,
+    "price": 0.10,
+    "image": "https://guadanatura.es/wp-content/uploads/2020/08/pimientos-california-rojo.jpg"
+  },
+  {
+    "name": "Cordero",
+    "qty": 2000,
+    "price": 5.20,
+    "image": "https://biotrendies.com/wp-content/uploads/2016/09/carne-cordero.jpg"
+  },
+  {
+    "name": "Arroz redondo",
+    "qty": 1000,
+    "price": 1.52,
+    "image": "https://cdn.metro-group.com/es/es_pim_163111001001_01.png?w=400&h=400&mode=pad"
+  },
+  {
+    "name": "Tomates en rama",
+    "qty": 750,
+    "price": 1.65,
+    "image": "https://biovergel.es/wp-content/uploads/2020/04/53.-Tomate-Rama.jpg"
+  },
+  {
+    "name": "Tortillas de maíz",
+    "qty": 200,
+    "price": 1.95,
+    "image": "https://s.cornershopapp.com/product-images/129655.jpg?versionId=uu85ncSKtBFxMvCamRu2U3aODzs5hxVU"
+  },
+  {
+    "name": "Rodajas de salmón",
+    "qty": 400,
+    "price": 6.45,
+    "image": "https://lacocinadebender.com/wp-content/uploads/2010/01/salmon-riberena.jpg"
+  },
+  {
+    "name": "Lechuga hoja de roble",
+    "qty": 350,
+    "price": 1.20,
+    "image": "https://www.lovemysalad.com/sites/default/files/styles/home_carousel_item_768/public/eikenbladgroen.jpg?itok=O5HqW0Ak"
+  }
 ]
