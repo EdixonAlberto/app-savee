@@ -12,6 +12,8 @@ import { Plan } from '~/views/Plan'
 import { Cart } from '~/views/Cart'
 import { Payment } from '~/views/Payment'
 import { Profile } from '~/views/Profile'
+import { PaymentSuccess } from '~/views/PaymentSuccess'
+import { NotFound } from '~/views/NotFound'
 
 const isDesktop = window.screen.width > 768
 
@@ -33,6 +35,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route path="/shopping" element={<LayoutMain children={<Cart />} />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/profile" element={<LayoutMain children={<Profile />} />} />
+          <Route path="/payment-success" element={<PaymentSuccess />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     )}
